@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider design</title>
+	<link rel="stylesheet" type="text/css" href="BloodBank index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/6db54b770d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="footer">
+			<nav>
+				<img src="Sakib Sadman.png" class="logo">
+				<ul id="sidemenu">
+					<li> <a href="../home.html">Home</a> </li>
+					<li> <a href="../home.html">About</a> </li>
+					<li> <a href="../home.html">Services</a> </li>
+					<li> <a href="../home.html">Projects</a> </li>
+					<li> <a href="../home.html">Portfolio</a> </li>
+					<li> <a href="../home.html">Contact</a> </li>
+				</ul>
+			</nav>
+		<h1>BloodBank Web White theme Design</h1>
+		<div class="footer-img">
+			<div class="image"><img src="1.png"> </div>
+			<div class="image"><img src="2.png"> </div>
+			<div class="image"><img src="3.png"> </div>
+			<div class="image"><img src="4.png"> </div>
+			<div class="image"><img src="5.png"> </div>
+			<div class="image"><img src="6.png"> </div>
+			<div class="image"><img src="7.png"> </div>
+			<div class="image"><img src="8.png"> </div>
+			<div class="image"><img src="9.png"> </div>
+			<div class="image"><img src="10.png"> </div>
+			<div class="image"><img src="11.png"> </div>
+			<div class="image"><img src="12.png"> </div>
+			<div class="image"><img src="13.png"> </div>
+			<div class="image"><img src="14.png"> </div>
+			<div class="image"><img src="15.png"> </div>
+			<div class="image"><img src="16.png"> </div>
+			<div class="image"><img src="17.png"> </div>
+			<div class="image"><img src="18.png"> </div>
+	    </div>
+	    <h1>BloodBank Web Red theme Design</h1>
+		<div class="footer-img">
+			<div class="image"><img src="a (1).png"> </div>
+			<div class="image"><img src="a (2).png"> </div>
+			<div class="image"><img src="a (3).png"> </div>
+			<div class="image"><img src="a (4).png"> </div>
+			<div class="image"><img src="a (5).png"> </div>
+			<div class="image"><img src="a (6).png"> </div>
+			<div class="image"><img src="a (7).png"> </div>
+			<div class="image"><img src="a (8).png"> </div>
+			<div class="image"><img src="a (9).png"> </div>
+			<div class="image"><img src="a (10).png"> </div>
+			<div class="image"><img src="a (11).png"> </div>
+			<div class="image"><img src="a (12).png"> </div>
+			<div class="image"><img src="a (13).png"> </div>
+			<div class="image"><img src="a (14).png"> </div>
+			<div class="image"><img src="a (15).png"> </div>
+			<div class="image"><img src="a (16).png"> </div>
+			<div class="image"><img src="a (17).png"> </div>
+			<div class="image"><img src="a (18).png"> </div>
+	    </div>
+	    <div class="popup-image">
+	    	<span>&times</span>
+	    	<img src="1.png">
+	    </div>
+	</div>
+</div>
+
+
+<script>
+
+	document.querySelectorAll('.footer-img img').forEach(image =>{
+		image.onclick = () =>{
+			document.querySelector('.popup-image').style.display = 'block';
+			document.querySelector('.popup-image img').src = image.getAttribute('src');
+		}
+	})
+
+document.querySelector('.popup-image').onclick = () =>{
+	document.querySelector('.popup-image').style.display = 'none'
+}
+</script>
+  
+</body>
+</html>
