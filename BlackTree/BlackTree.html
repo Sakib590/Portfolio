@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider design</title>
+	<link rel="stylesheet" type="text/css" href="BlackTree  index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/6db54b770d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="footer">
+			<nav>
+				<img src="Sakib Sadman.png" class="logo">
+				<ul id="sidemenu">
+					<li> <a href="../home.html">Home</a> </li>
+					<li> <a href="../home.html">About</a> </li>
+					<li> <a href="../home.html">Services</a> </li>
+					<li> <a href="../home.html">Projects</a> </li>
+					<li> <a href="../home.html">Portfolio</a> </li>
+					<li> <a href="../home.html">Contact</a> </li>
+				</ul>
+			</nav>
+		<h2>BlakTree Website Mockup</h2>
+		<a class="layer" href="https://www.figma.com/proto/FD83gzgUzsN9XEnkGnEBJo/BlackTree-3.0?node-id=11%3A14043&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=11%3A14043"><i class="fa-solid fa-up-right-from-square"></i></a>
+	    <h1>BlakTree Web Design</h1>
+		<div class="footer-img">
+			<div class="image"><img src="1.png"> </div>
+			<div class="image"><img src="2.png"> </div>
+			<div class="image"><img src="3.png"> </div>
+			<div class="image"><img src="4.png"> </div>
+			<div class="image"><img src="5.png"> </div>
+			<div class="image"><img src="6.png"> </div>
+			<div class="image"><img src="7.png"> </div>
+			<div class="image"><img src="8.png"> </div>
+			<div class="image"><img src="9.png"> </div>
+			<div class="image"><img src="10.png"> </div>
+			<div class="image"><img src="11.png"> </div>
+			<div class="image"><img src="12.png"> </div>
+			<div class="image"><img src="13.png"> </div>
+			<div class="image"><img src="14.png"> </div>
+			<div class="image"><img src="15.png"> </div>
+			<div class="image"><img src="16.png"> </div>
+			<div class="image"><img src="17.png"> </div>
+			<div class="image"><img src="18.png"> </div>
+			<div class="image"><img src="19.png"> </div>
+			<div class="image"><img src="20.png"> </div>
+			<div class="image"><img src="21.png"> </div>
+	    </div>
+	    <div class="popup-image">
+	    	<span>&times</span>
+	    	<img src="1.png">
+	    </div>
+	</div>
+</div>
+
+
+<script>
+
+	document.querySelectorAll('.footer-img img').forEach(image =>{
+		image.onclick = () =>{
+			document.querySelector('.popup-image').style.display = 'block';
+			document.querySelector('.popup-image img').src = image.getAttribute('src');
+		}
+	})
+
+document.querySelector('.popup-image').onclick = () =>{
+	document.querySelector('.popup-image').style.display = 'none'
+}
+</script>
+  
+</body>
+</html>

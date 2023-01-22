@@ -71,11 +71,33 @@ nav ul li a:hover::after{
 nav:hover ul li a{
 	color: #333;
 }
+.layer a{
+	margin-top: 20px;
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.footer h2{
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: normal;
+	margin-top: 60px;
+	color: #333;
+	text-align: left;
+	text-transform: capitalize;
+}
 .footer h1{
 	font-size: 40px;
 	font-family: sans-serif;
 	font-weight: normal;
-	padding: 15px;
+	padding: 50px;
 	color: #333;
 	text-align: center;
 	text-transform: capitalize;

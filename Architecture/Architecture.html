@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="header">
-		<div class="footer">
+		<div class="container">
 			<nav>
 				<img src="Sakib Sadman.png" class="logo">
 				<ul id="sidemenu">
@@ -22,32 +22,17 @@
 					<li> <a href="../home.html">Contact</a> </li>
 				</ul>
 			</nav>
-	    <h1>Architecture</h1>
-		<div class="footer-img">
-			<div class="image"><img src="1.jpg"> </div>
-			<div class="image"><img src="2.jpg"> </div>
-	    </div>
-	    <div class="popup-image">
-	    	<span>&times</span>
-	    	<img src="1.png">
-	    </div>
+	<h1>Architecture Design</h1>		
+	<div class="gallery">
+		<div class="image-box active">
+			<img src="1.jpg">
+		</div>
+		<div class="image-box">
+			<img src="2.jpg">
+		</div>
 	</div>
 </div>
-
-
-<script>
-
-	document.querySelectorAll('.footer-img img').forEach(image =>{
-		image.onclick = () =>{
-			document.querySelector('.popup-image').style.display = 'block';
-			document.querySelector('.popup-image img').src = image.getAttribute('src');
-		}
-	})
-
-document.querySelector('.popup-image').onclick = () =>{
-	document.querySelector('.popup-image').style.display = 'none'
-}
-</script>
+</div>
   
 </body>
 </html>

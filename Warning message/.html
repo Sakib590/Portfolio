@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider design</title>
+	<link rel="stylesheet" type="text/css" href="Warning message index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/6db54b770d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="footer">
+			<nav>
+				<img src="Sakib Sadman.png" class="logo">
+				<ul id="sidemenu">
+					<li> <a href="../home.html">Home</a> </li>
+					<li> <a href="../home.html">About</a> </li>
+					<li> <a href="../home.html">Services</a> </li>
+					<li> <a href="../home.html">Projects</a> </li>
+					<li> <a href="../home.html">Portfolio</a> </li>
+					<li> <a href="../home.html">Contact</a> </li>
+				</ul>
+			</nav>
+		<h1>Warning Message Design</h1>
+		<div class="footer-img">
+			<div class="image"><img src="A (1).png"> </div>
+			<div class="image"><img src="A (2).png"> </div>
+			<div class="image"><img src="A (3).png"> </div>
+			<div class="image"><img src="A (4).png"> </div>
+			<div class="image"><img src="A (5).png"> </div>
+			<div class="image"><img src="A (6).png"> </div>
+			<div class="image"><img src="A (7).png"> </div>
+			<div class="image"><img src="A (8).png"> </div>
+			<div class="image"><img src="A (9).png"> </div>
+	    </div>
+	    <div class="popup-image">
+	    	<span>&times</span>
+	    	<img src="A (1).png">
+	    </div>
+	</div>
+</div>
+
+
+<script>
+
+	document.querySelectorAll('.footer-img img').forEach(image =>{
+		image.onclick = () =>{
+			document.querySelector('.popup-image').style.display = 'block';
+			document.querySelector('.popup-image img').src = image.getAttribute('src');
+		}
+	})
+
+document.querySelector('.popup-image').onclick = () =>{
+	document.querySelector('.popup-image').style.display = 'none'
+}
+</script>
+  
+</body>
+</html>
