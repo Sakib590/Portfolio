@@ -33,6 +33,7 @@ nav{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 5px 0;
+	position: fixed;
 }
 
 .logo{
