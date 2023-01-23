@@ -105,6 +105,15 @@ nav:hover ul li a{
 	text-align: left;
 	text-transform: capitalize;
 }
+.footer h3{
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: normal;
+	margin-top: 20px;
+	color: #333;
+	text-align: left;
+	text-transform: capitalize;
+}
 .footer h1{
 	font-size: 40px;
 	font-family: sans-serif;
