@@ -1,3 +1,7 @@
+:root{
+	--primary-color: #F2F2F2;
+	--secondary-color: #000000;
+}
 #icon{
 	width: 30px;
 	cursor: pointer;
@@ -6,6 +10,7 @@
 html{
 	scroll-behavior: smooth;
 }
+
 body{
 	background: var(--primary-color);
 	color: var(--secondary-color);
